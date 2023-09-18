@@ -1,0 +1,20 @@
+<!-- views/upload-form.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>File Upload Form</title>
+  <link rel="stylesheet" href="/styles.css"> <!-- Include the CSS file -->
+
+</head>
+<body>
+  <h1>File Upload</h1>
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <button type="submit">Upload</button>
+  </form>
+  <% if (error) { %>
+    <p><%= error %></p>
+  <% } %>
+</body>
+</html>
