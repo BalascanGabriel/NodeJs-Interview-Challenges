@@ -4,6 +4,9 @@ const ejs = require('ejs')
 const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
 const mongoose = require('mongoose')
+//jsonwebtoken for auth
+const jwt = require('jsonwebtoken')
+const authenticateToken = require('./middleware/authMiddleware')
 
 //app initialisation and server
 const app = express()
@@ -21,17 +24,26 @@ app.use(methodOverride('_method'))
 app.use(express.static(__dirname + '/public'))
 
 //DB CONNECTION
-mongoose.connect('mongodb://localhost/todo-app',{
-    useNewUrlParser : true,
+mongoose.connect('mongodb://localhost/todo-app', {
+    useNewUrlParser: true,
     useUnifiedTopology: true,
 })
 //CHECK CONNECTION
-mongoose.connection.once('open',()=>{
+mongoose.connection.once('open', () => {
     console.log('Connected to DB !')
 })
 
 
 //TO DO: Routes
+const tasksRoutes = require('./routes/tasksRoutes');
+app.use('/tasks', tasksRoutes)
+
+
+
+app.get('/protected', authenticateToken, (req,res)=>{
+    res.send(`Welcome, ${req.user.username}! This is a protected route.`);
+
+})
 
 app.get('/', (req, res) => {
     res.redirect('/tasks');
