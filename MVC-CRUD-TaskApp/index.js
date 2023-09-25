@@ -24,7 +24,7 @@ app.use(methodOverride('_method'))
 app.use(express.static(__dirname + '/public'))
 
 //DB CONNECTION
-mongoose.connect('mongodb://localhost/todo-app', {
+mongoose.connect('mongodb://127.0.0.1:27017/ToDoApp', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })

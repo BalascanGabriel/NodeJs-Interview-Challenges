@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>To-Do List</h1>
-    <form action="/tasks" method="POST">
+    <form action="/tasks/new" method="POST">
         <label for="title">Title:</label>
         <input type="text" id="title" name="title" required>
         <label for="description">Description:</label>
@@ -21,7 +21,7 @@
             <li>
                 <h2><%= task.title %></h2>
                 <p><%= task.description %></p>
-                <a href="/tasks/<%= task._id %>">View</a>
+                <a href="tasks/<%= task._id %>">View</a>
                 <form action="/tasks/<%= task._id %>?_method=DELETE" method="POST">
                     <button type="submit">Delete</button>
                 </form>
