@@ -1,0 +1,2 @@
+Deci smecheria ar fi in routes sa fie doar rutele care pointeaza catre metode din controlleri. In controlleri functii care nu transforma date ci doar care preiau date din modele
+sau services.
