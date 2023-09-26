@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Store</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <span>My Store</span>
+        <nav>
+            <a href="#">Home</a>
+            <a href="/">Products</a>
+            <a href="/users/myAccount">My Account</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Welcome to My Store</h1>
+        <div class="product-cards">
+            <% products.forEach(product=> { %>
+                <div class="product-card">
+                    <h2>
+                        <%= product.title %>
+                    </h2>
+                    <p>
+                        <%= product.description %>
+                    </p>
+                    <p><strong>Price: $<%= product.price.toFixed(2) %></strong></p>
+                </div>
+                <% }); %>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2023 Gabe - All Rights Reserved
+    </footer>
+
+</body>
+
+</html>
