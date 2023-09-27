@@ -18,11 +18,11 @@ app.set('views', path.join(__dirname, 'views'));
 
 const port = process.env.PORT
 
+const productsRouter = require('./routes/products');
+app.use('/products', productsRouter);
 //routes
 app.get('/', (req, res) => {
-
     const products = JSON.parse(fs.readFileSync('products.json', 'utf-8'))
-
     res.render('index', {products : products});
 })
 
@@ -34,9 +34,12 @@ app.get('/contact', (req, res) => {
     res.render('contact'); 
 });
 
+
+
+
 app.use(notFoundMiddleware)
 app.use(errorMiddleware)
 
-app.listen(port, (req, res) => {
+app.listen(port, () => {
     console.log(`Server started on port ${port}....`)
 })

@@ -1,62 +1,67 @@
 [
-    {
-        "title": "Product 1",
-        "description": "This is the description of product 1.",
-        "price": 19.99
-    },
-    {
-        "title": "Product 2",
-        "description": "Product 2 is a great choice for your needs.",
-        "price": 29.99
-    },
-    {
-        "title": "Product 3",
-        "description": "The third product in our lineup.",
-        "price": 14.99
-    },
-    {
-        "title": "Product 4",
-        "description": "A premium product with advanced features.",
-        "price": 49.99
-    },
-    {
-        "title": "Product 5",
-        "description": "Description for product 5.",
-        "price": 24.99
-    },
-    {
-        "title": "Product 6",
-        "description": "Description for product 6.",
-        "price": 39.99
-    },
-    {
-        "title": "Product 7",
-        "description": "Description for product 7.",
-        "price": 17.99
-    },
-    {
-        "title": "Product 8",
-        "description": "Description for product 8.",
-        "price": 59.99
-    },
-    {
-        "title": "Product 9",
-        "description": "Description for product 9.",
-        "price": 12.99
-    },
-    {
-        "title": "Product 10",
-        "description": "Description for product 10.",
-        "price": 34.99
-    },
-    {
-        "title": "Product 11",
-        "description": "Description for product 11.",
-        "price": 22.99
-    },
-    {
-        "title": "Product 12",
-        "description": "Description for product 12.",
-        "price": 45.99
-    }
+  {
+    "title": "Product 1",
+    "description": "This is the description of product 1.",
+    "price": 19.99
+  },
+  {
+    "title": "Product 2",
+    "description": "Product 2 is a great choice for your needs.",
+    "price": 29.99
+  },
+  {
+    "title": "Product 3",
+    "description": "The third product in our lineup.",
+    "price": 14.99
+  },
+  {
+    "title": "Product 4",
+    "description": "A premium product with advanced features.",
+    "price": 49.99
+  },
+  {
+    "title": "Product 5",
+    "description": "Description for product 5.",
+    "price": 24.99
+  },
+  {
+    "title": "Product 6",
+    "description": "Description for product 6.",
+    "price": 39.99
+  },
+  {
+    "title": "Product 7",
+    "description": "Description for product 7.",
+    "price": 17.99
+  },
+  {
+    "title": "Product 8",
+    "description": "Description for product 8.",
+    "price": 59.99
+  },
+  {
+    "title": "Product 9",
+    "description": "Description for product 9.",
+    "price": 12.99
+  },
+  {
+    "title": "Product 10",
+    "description": "Description for product 10.",
+    "price": 34.99
+  },
+  {
+    "title": "Product 11",
+    "description": "Description for product 11.",
+    "price": 22.99
+  },
+  {
+    "title": "Product 12",
+    "description": "Description for product 12.",
+    "price": 45.99
+  },
+  {
+    "title": "New Product GABE",
+    "description": "This is a new product",
+    "price": 19
+  }
 ]
