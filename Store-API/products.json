@@ -45,21 +45,6 @@
     "price": 12.99
   },
   {
-    "title": "Product 10",
-    "description": "Description for product 10.",
-    "price": 34.99
-  },
-  {
-    "title": "Product 11",
-    "description": "Description for product 11.",
-    "price": 22.99
-  },
-  {
-    "title": "Product 12",
-    "description": "Description for product 12.",
-    "price": 45.99
-  },
-  {
     "title": "New Product GABE",
     "description": "This is a new product",
     "price": 19
