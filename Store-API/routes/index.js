@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const fs = require('fs')
 
 //routes for navigating the page
 router.get('/', (req, res) => {
