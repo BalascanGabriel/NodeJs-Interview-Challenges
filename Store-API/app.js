@@ -21,22 +21,13 @@ app.use(bodyParser.json());
 
 const port = process.env.PORT
 
+//Asta ca sa foloseasca toate rutele definite pentru products care folosesc controllerii
 const productsRouter = require('./routes/products');
 app.use('/products', productsRouter);
-//routes
-app.get('/', (req, res) => {
-    const products = JSON.parse(fs.readFileSync('products.json', 'utf-8'))
-    res.render('index', {products : products});
-})
 
-app.get('/about', (req, res) => {
-    res.render('about'); 
-});
 
-app.get('/contact', (req, res) => {
-    res.render('contact'); 
-});
-
+const indexRoutes = require('./routes/index');
+app.use('/', indexRoutes); // General navigation routes
 
 
 
