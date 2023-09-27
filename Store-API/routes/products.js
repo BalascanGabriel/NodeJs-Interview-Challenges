@@ -13,5 +13,6 @@ router.get('/new', productsController.renderNewProductForm);
 router.post('/create', productsController.createNewProduct);
 
 
+
 module.exports = router;
 

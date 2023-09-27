@@ -3,6 +3,7 @@ const express = require('express')
 const app = express()
 const path = require('path');
 const fs = require('fs')
+const bodyParser = require('body-parser');
 
 
 //geting declared middlewares
@@ -14,6 +15,8 @@ app.use(express.json())
 app.use(express.static('public'))
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 
 const port = process.env.PORT

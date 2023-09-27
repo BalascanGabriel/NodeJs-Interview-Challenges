@@ -63,5 +63,15 @@
     "title": "New Product GABE",
     "description": "This is a new product",
     "price": 19
+  },
+  {
+    "title": "Da",
+    "description": "dadadad",
+    "price": 18
+  },
+  {
+    "title": "Produs nou",
+    "description": "Produs super nou",
+    "price": 22
   }
 ]

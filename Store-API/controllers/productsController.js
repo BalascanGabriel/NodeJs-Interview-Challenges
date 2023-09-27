@@ -8,7 +8,7 @@ const renderProductsPage = (req, res) => {
 }
 
 const renderNewProductForm = (req, res) => {
-    res.render('new-product');
+    res.render('new-product-form');
 };
 
 //Performing CRUD Opperations
@@ -17,12 +17,13 @@ const renderNewProductForm = (req, res) => {
 const createNewProduct = (req, res) => {
     // Get data from request body
     const { title, description, price } = req.body;
+    const priceAsNumber = parseInt(price);
 
     // Create the new product
     const newProduct = {
         title,
         description,
-        price,
+        price : priceAsNumber,
     };
 
     // Read the existing products from the JSON file
